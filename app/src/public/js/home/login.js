@@ -13,7 +13,7 @@ loginBtn.addEventListener("click", () => {
     fetch("/login", {
         method: "post",
         headers: {
-            "Content-Type": "application/json",
+            "Content-Type": "application/json"
         },
         body: JSON.stringify(req),
     });

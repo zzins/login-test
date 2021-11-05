@@ -9,5 +9,7 @@ app.set("view engine", "ejs");
 
 app.use("/", home);
 app.use(express.static(`${__dirname}/src/public`));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 module.exports = app;
